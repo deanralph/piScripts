@@ -3,6 +3,7 @@
 
 if [ -d "/mnt/clusterShare/logs/shutdownLogs" ] 
   then
+    echo "Log folder not found - creating it"
     mkdir /mnt/clusterShare/logs/shutdownLogs
 fi
 
