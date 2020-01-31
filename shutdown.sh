@@ -4,7 +4,7 @@
 if [ -d "/mnt/clusterShare/logs/shutdownLog/$HOSTNAME" ] 
   then
     echo "Log folder not found - creating it"
-    mkdir /mnt/clusterShare/logs/shutdownLogs/$SOSTNAME
+    mkdir /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME
 fi
 
 echo "Shutdown command recieved on $HOSTNAME at $(date-%a)" > /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME/$(date +'%Y%m%d%H%M')
