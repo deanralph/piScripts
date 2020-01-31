@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Shuts down the raspberry pi 
+# Shuts down the raspberry pi & loggs the time
 
 if [ -d "/mnt/clusterShare/logs/shutdownLogs" ] 
   then
