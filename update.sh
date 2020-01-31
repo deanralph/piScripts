@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 # Runs update routine
 
-mkdir logs/
+if [ -d "/mnt/clusterShare/logs/shutdownLogs" ] 
+  then
+    echo "Log folder not found - creating it"
+    mkdir /mnt/clusterShare/logs/updateLogs
+fi
 
-updatelog=logs/$(date +'%Y%m%d%H%M')
+updatelog=/mnt/clusterShare/logs/updateLogs/$(date +'%Y%m%d%H%M')
 
 echo "Checking For Updates..."
 apt-get update > $updatelog
