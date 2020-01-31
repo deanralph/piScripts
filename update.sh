@@ -4,10 +4,10 @@
 if [ -d "/mnt/clusterShare/logs/shutdownLogs" ] 
   then
     echo "Log folder not found - creating it"
-    mkdir /mnt/clusterShare/logs/updateLogs
+    mkdir /mnt/clusterShare/logs/updateLogs/$HOSTNAME
 fi
 
-updatelog=/mnt/clusterShare/logs/updateLogs/$(date +'%Y%m%d%H%M')
+updatelog=/mnt/clusterShare/logs/updateLogs/$HOSTNAME/$(date +'%Y%m%d%H%M')
 
 echo "Checking For Updates..."
 apt-get update > $updatelog
