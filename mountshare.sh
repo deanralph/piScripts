@@ -3,5 +3,7 @@
 
 if [ ! -d /mnt/clusterShare ]
 then
-  sudo mount.cifs //arther/clusterShare /mnt/clusterShare -o user=guest 
+  mkdir /mnt/clusterShare
 fi
+
+sudo mount.cifs //arther/clusterShare /mnt/clusterShare -o user=guest 
