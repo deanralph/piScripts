@@ -7,6 +7,6 @@ if [ -d "/mnt/clusterShare/logs/shutdownLog/$HOSTNAME" ]
     mkdir /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME
 fi
 
-echo "Shutdown command recieved on $HOSTNAME at $(date-%a)" > /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME/$(date +'%Y%m%d%H%M')
+echo "Shutdown command recieved at $(date-%a)" > /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME/$(date +'%Y%m%d%H%M')
 
 shutdown -h now
