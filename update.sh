@@ -7,7 +7,7 @@ if [ ! -d "/mnt/clusterShare/logs/updateLogs/$HOSTNAME" ]
     mkdir /mnt/clusterShare/logs/updateLogs/$HOSTNAME
 fi
 
-updatelog=/mnt/clusterShare/logs/updateLogs/$HOSTNAME/$(date +'%Y%m%d%H%M')
+updatelog=/mnt/clusterShare/logs/updateLogs/$HOSTNAME/$(date +'%Y%m%d%H%M').txt
 
 echo "Checking For Updates..."
 apt-get update > $updatelog
