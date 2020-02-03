@@ -21,4 +21,4 @@ apt-get autoremove >> $updatelog
 echo "Cleaning up..."
 apt-get autoclean >> $updatelog
 
-echo "Done!"
+echo "Completed. Log updated"
