@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Shuts down the raspberry pi & loggs the time
+# Shuts down the raspberry pi & logs the time
 
 if [ -d "/mnt/clusterShare/logs/shutdownLog/$HOSTNAME" ] 
   then
@@ -7,6 +7,6 @@ if [ -d "/mnt/clusterShare/logs/shutdownLog/$HOSTNAME" ]
     mkdir /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME
 fi
 
-echo "Shutdown command recieved at $(date-%a)" > /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME/$(date +'%Y%m%d%H%M')
+echo "Shutdown command recieved" > /mnt/clusterShare/logs/shutdownLogs/$HOSTNAME/$(date +'%Y%m%d%H%M')
 
 shutdown -h now
