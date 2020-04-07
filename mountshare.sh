@@ -6,4 +6,4 @@ then
   mkdir /mnt/clusterShare
 fi
 
-sudo mount.cifs //arther/clusterShare /mnt/clusterShare -o user=guest 
+sudo mount.cifs //clockwork/piShare /mnt/clusterShare -o user=guest 
